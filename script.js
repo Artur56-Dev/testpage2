@@ -20,6 +20,10 @@ window.addEventListener('load', function () {
   window.addEventListener("resize", function() {
     if (window.matchMedia("(orientation: portrait)").matches) {
       // экран стал вертикальным
+      if (hellodiv.offsetHeight > window.innerHeight) {
+      hellodiv.style.height = "100vh";
+      console.log('div больше и должен обрезатся');
+    }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
@@ -31,6 +35,10 @@ window.addEventListener('load', function () {
       console.log('Экран стал вертикальным');
     } else if (window.matchMedia("(orientation: landscape)").matches) {
       // экран стал горизонтальным
+      if (hellodiv.offsetHeight > window.innerHeight) {
+      hellodiv.style.height = "100vh";
+      console.log('div больше и должен обрезатся');
+    }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
