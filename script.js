@@ -22,10 +22,12 @@ window.addEventListener('load', function () {
       // экран стал вертикальным
       if (hellodiv.offsetHeight > window.innerHeight) {
       hellodiv.style.height = "100vh";
+      }
       console.log('div больше и должен обрезатся');
     }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
+      }
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
       }
       else{
