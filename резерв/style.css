@@ -1,0 +1,70 @@
+:root {
+  --color1: #33cc66;
+  --color2: #33ff66;
+  --color3: #99ff99;
+  --color4: #00ff99;
+  --color5: #0000ff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(246, 245, 245);
+}
+
+.headerdiv {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+.conteiner {
+    display: flex;
+  height: 250px;
+  width: 400px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.4s cubic-bezier(1, 0, 1, 1);
+}
+.conteiner:hover {
+  width: 100%;
+  box-shadow: 0 0 10px rgb(128, 128, 128, 0.1);
+}
+.conteiner:hover > .div1 > .div1a > img{
+    transform: scale(1.1);
+}
+.conteiner:hover > .div2{
+    flex-grow: 1;
+}
+.div1 {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  padding: 10px;
+}
+.div1a img {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease-in-out;
+}
+.div1a img:hover {
+  transform: scale(1.1);
+}
+
+.div1a {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.div1b{
+    height: 100%;
+    width: 0;
+}
