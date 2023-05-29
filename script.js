@@ -18,16 +18,11 @@ window.addEventListener('load', function () {
     console.log("Ширина "+ this.window.innerWidth + " меньше " + "Высоты " + this.window.innerHeight)
   }
   window.addEventListener("resize", function() {
+    
     if (window.matchMedia("(orientation: portrait)").matches) {
       // экран стал вертикальным
-      if (hellodiv.offsetHeight > window.innerHeight) {
-      hellodiv.style.height = "100vh";
-      }
-      console.log('div больше и должен обрезатся');
-    }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
-      }
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
       }
       else{
@@ -37,10 +32,6 @@ window.addEventListener('load', function () {
       console.log('Экран стал вертикальным');
     } else if (window.matchMedia("(orientation: landscape)").matches) {
       // экран стал горизонтальным
-      if (hellodiv.offsetHeight > window.innerHeight) {
-      hellodiv.style.height = "100vh";
-      console.log('div больше и должен обрезатся');
-    }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
@@ -73,4 +64,23 @@ window.addEventListener('scroll', () => {
     div.classList.remove('fixed-top');
     placeholder.style.display = 'none'; // hide the placeholder element when the div element is no longer fixed
   }
+});
+const divmenuspan = document.querySelector('.divmenuspan');
+const dropdiv = document.querySelector('.dropdiv');
+divmenuspan.addEventListener('click', () =>{
+    console.log('Нажал');
+    dropdiv.style.height = "68vw";
+    setTimeout(function() {
+        dropdiv.style.padding = "3vw";
+    }, 60);
+    // dropdiv.style.padding = "3vw";
+});
+const dropdivb1 = document.querySelector('.dropdiv .a1 .b1');
+dropdivb1.addEventListener('click', () =>{
+    console.log('Нажал');
+    dropdiv.style.height = "0";
+    // dropdiv.style.padding = "0";
+    setTimeout(function() {
+        dropdiv.style.padding = "0";
+    }, 240);
 });
