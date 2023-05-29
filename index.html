@@ -19,12 +19,46 @@
 <body>
     <div class="maindiv">
         <div class="hellodiv">
-            <img class="helloimg" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg">
+            <?php
+            $rand = rand(1, 4);
+            switch ($rand) {
+                case 1:
+                    $img = '<img class="helloimg" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg">';
+                    // $img = '<img class="helloimg" src="https://www.einsurance.com/wp-content/uploads/Condominium-Insurance.jpg">';
+                    echo $img;
+                    break;
+                case 2:
+                    $img = '<img class="helloimg" src="https://miriadagroup.ru/wp-content/uploads/2017/08/03-e1505386266928.jpg">';
+                    echo $img;
+                    break;
+                case 3:
+                    $img = '<img class="helloimg" src="https://kmory.ru/img/Резиденция.jpg">';
+                    echo $img;
+                    break;
+                case 4:
+                    $img = '<img class="helloimg" src="https://img5.goodfon.ru/original/2736x1826/2/f4/krasnodar-gorod-rossiia-reka-kuban-nebo-leto-doma-zdaniia-ne.jpg">';
+                    // $img = '<img class="helloimg" src="https://design101blog.files.wordpress.com/2013/08/3d-modern-building-design-25.jpg">';
+                    echo $img;
+                    break;
+            }
+            ?>
+            <!-- <img class="helloimg" src="https://alterainvest.ru/upload/iblock/fe7/fe7c4fd266ad1ee0a642ca36230a0535.jpg"> -->
+            <!-- <img class="helloimg" src="https://www.einsurance.com/wp-content/uploads/Condominium-Insurance.jpg"> -->
+            <!-- <img class="helloimg" src="https://news1.ru/wp-content/uploads/2017/06/2-e1497612810369.jpg"> -->
+            <!-- <img class="helloimg" src="https://webpulse.imgsmail.ru/imgpreview?key=pulse_cabinet-image-827fd626-37a0-4441-8568-4995a3322ad6&mb=webpulse"> -->
+            <!-- <img class="helloimg" src="https://salesap.ru/blog/wp-content/uploads/2017/04/Depositphotos_46077129_original-kopiya-1200x630-cropped.jpg"> -->
+            <!-- <img class="helloimg" src="https://infonedvizhimost.com/wp-content/uploads/2023/02/44cd5afb69393de655f26eb3464f6a65.jpeg"> -->
+            <!-- <img class="helloimg" src="https://invisionstudio.com/wp-content/uploads/2015/11/Seattle-commercial-real-estate-photography-company-aerial-photography-services-virtual-tours-for-commercial.jpg"> -->
+            <!-- <img class="helloimg" src="https://design101blog.files.wordpress.com/2013/08/3d-modern-building-design-25.jpg"> -->
+            <!-- <img class="helloimg" src="https://avatars.dzeninfra.ru/get-zen_doc/1244179/pub_60ca00a8171c814bc632879c_60ca0607f57aa01f192fb716/scale_1200"> -->
+            <!-- <img class="helloimg" src="http://1gagarin.spb.ru/wp-content/uploads/2018/05/vtorichnaya_nedvizhimost_moskovskiy_rayon1.jpg"> -->
+            <!-- <img class="helloimg" src="https://pr1.zoon.ru/5buZVV5HVf_4Taz9PnDxmg/2400x1500,q75/4px-BW84_n3An8gCUWNaP0Xj5yr-KGEiPQ4KMeUr7wfqR_CoVJLGiQyBvexrBy_J3AFgHnh12xmMN9ON07sPTg__0RiExPClxK8zNzEOXfZ6u7tS7jiLg8sJ921Fr9A_20yoDmgIClsuTV80g54uE0AU94Dn54Eg3s9swDvhC1GMrQnWAM5fBOaEDzQGYl62BpAtuztTD7EeakJjZ8CxPeCyHWjwNPK7VcJ_inVkxQPn1KVMVhm9Q9HpyYzIpej3SejrJYkZvRDYh2qJRTik1q6LdNHYxTo8QhEsJD6WpDgJ7D6aoocQ5A"> -->
+            <!-- <img class="helloimg" src="https://bk-giskon.com.ua/wp-content/uploads/2021/05/34567.jpg"> -->
             <div class="blackoutdiv"></div>
             <div class="hellocontent">
                 <div class="headerdiv">
                     <div class="headerlogodiv">
-                        <img class="logoimg" src="https://img.freepik.com/free-vector/real-estate-logo_126523-717.jpg?w=1060&t=st=1684694020~exp=1684694620~hmac=364fa7dde0b70ae4b58edf83e41b12479709984dbe5c5bdb11a3ba569cc96c30">
+                        <img class="logoimg" src="image/real-estate-logo1.png">
                     </div>
                     <div class="headerinfodiv">
                         <a>Объекты</a>
@@ -53,7 +87,60 @@
                         </div>
                     </div>
                 </div>
+                <div class="hellocontent2">
+                <div class="headerdiv">
+                    <div class="headerlogodiv">
+                        <img class="logoimg" src="image/real-estate-logo1.png">
+                    </div>
+                    <div class="divmenuspan">
+                        <span class="material-symbols-outlined hellomenu">
+                            menu
+                        </span>
+                    </div>
+                    <div class="dropdiv">
+                        <div class="a1">
+                            <div class="b1">
+                                <span class="material-symbols-outlined hellomenu">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="a2">
+                            <a>Объекты</a>
+                        </div>
+                        <div class="a2">
+                            <a>Планировки</a>
+                        </div>
+                        <div class="a2">
+                            <a>Ипотека</a>
+                        </div>
+                        <div class="a2">
+                            <a>О компании</a>
+                        </div>
+                        <div class="actiondiv">
+                            <div class="accautdiv">
+                                <span class="material-symbols-outlined accounticon">
+                                    account_circle
+                                </span>
+                                <span id="accountspan">Войти</span>
+                            </div>
+                            <div class="accautdiv" style="margin: 0 5vw;">
+                                <span class="material-symbols-outlined accounticon">
+                                    real_estate_agent
+                                </span>
+                                <span id="accountspan">Дома</span>
+                            </div>
+                            <div class="accautdiv">
+                                <span class="material-symbols-outlined accounticon">
+                                    receipt_long
+                                </span>
+                                <span id="accountspan">Сделки</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="mainhellocontent">
+                    <!-- <div  class="blackback"></div> -->
                     <p class="headerp">Недвижимость премиум класса в России</p>
                     <p class="headerp2">Мы создаем дома, инфраструктуру и сервисы, которые экономят ваше время, чтобы вы могли потратить его на то, что действительно важно</p>
                 </div>
@@ -168,11 +255,11 @@
                 <div class="a1">
                     <div class="b1">
                         <div class="div">
-                            <img style="transition: all 0.3s ease-in-out;" src="image/MoscowEstate-01.png">
+                            <img style="transition: all 0.3s ease-in-out;" src="image/fridland.png">
                         </div>
                         <div class="description">
                             <p class="p1">от 10 млн</p>
-                            <p class="p2">Москва, Пресненская набережная 6</p>
+                            <p class="p2">Сочи, Курортный проспект</p>
                             <p class="p3">Сочетание истории с яркой современной архитектурой, комфортабельной планировкой и удачным месторасположением в центре.</p>
                             <p class="p4">Нажмите для просмотра</p>
                         </div>
@@ -180,7 +267,9 @@
                     </div>
                     <div class="b2">
                         <div class="div">
-                            <img style="transition: all 0.3s ease-in-out;" src="image/fredland-01.png">
+                            <!-- <img style="transition: all 0.3s ease-in-out;" src="image/fredland-01.png"> -->
+                            <img style="transition: all 0.3s ease-in-out;" src="https://static.tildacdn.com/tild3863-3962-4963-b162-343466343434/__1.svg">
+                            
                         </div>
                         <div class="description">
                             <p class="p1">от 7.8 млн</p>
@@ -210,17 +299,60 @@
                         </div>
                         <div class="description">
                             <p class="p1">от 4.6 млн</p>
-                            <p class="p2">Краснодар, улица Разведчика Ахметова</p>
+                            <p class="p2">Краснодар, Кубанская набережная</p>
                             <p class="p3">Доступность городской среды в гармоничном сочетании с преимуществами жизни на природе. Европланировки повышенного комфорта.</p>
                             <p class="p4">Нажмите для просмотра</p>
                         </div>
-                        <img class="image1" src="https://spbmagazine.ru/wp-content/uploads/2019/10/i.jpg"></img>
+                        <img class="image1" src="https://img5.goodfon.ru/original/2736x1826/2/f4/krasnodar-gorod-rossiia-reka-kuban-nebo-leto-doma-zdaniia-ne.jpg"></img>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <footer class="footer">
+     <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer>
     <script src="script.js"></script>
 </body>
 
