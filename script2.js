@@ -13,25 +13,25 @@ window.addEventListener('scroll', () => {
     placeholder.style.display = 'none'; // hide the placeholder element when the div element is no longer fixed
   }
 });
-// const divmenuspan = document.querySelector('.divmenuspan');
-// const dropdiv = document.querySelector('.dropdiv');
-// divmenuspan.addEventListener('click', () => {
-//   console.log('Нажал');
-//   dropdiv.style.height = "68vw";
-//   setTimeout(function () {
-//     dropdiv.style.padding = "3vw";
-//   }, 60);
-//   // dropdiv.style.padding = "3vw";
-// });
-// const dropdivb1 = document.querySelector('.dropdiv .a1 .b1');
-// dropdivb1.addEventListener('click', () => {
-//   console.log('Нажал');
-//   dropdiv.style.height = "0";
-//   // dropdiv.style.padding = "0";
-//   setTimeout(function () {
-//     dropdiv.style.padding = "0";
-//   }, 240);
-// });
+const divmenuspan = document.querySelector('.divmenuspan');
+const dropdiv = document.querySelector('.dropdiv');
+divmenuspan.addEventListener('click', () => {
+  console.log('Нажал');
+  dropdiv.style.height = "68vw";
+  setTimeout(function () {
+    dropdiv.style.padding = "3vw";
+  }, 60);
+  // dropdiv.style.padding = "3vw";
+});
+const dropdivb1 = document.querySelector('.dropdiv .a1 .b1');
+dropdivb1.addEventListener('click', () => {
+  console.log('Нажал');
+  dropdiv.style.height = "0";
+  // dropdiv.style.padding = "0";
+  setTimeout(function () {
+    dropdiv.style.padding = "0";
+  }, 240);
+});
 // // window.addEventListener('load', function () {
 // //   if (window.matchMedia("(orientation: landscape)").matches) {
 // //     // экран стал горизонтальным
