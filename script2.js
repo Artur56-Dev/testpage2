@@ -39,12 +39,11 @@ dropdivb1.addEventListener('click', () => {
 // //     console.log("Экран стал горизонтальным");
 // //   }
 // // });
-// window.addEventListener("resize", function () {
-
-//   if (window.matchMedia("(orientation: portrait)").matches) {
-//     // экран стал вертикальным
-//     if (this.document.body.offsetWidth < 480) {
-//       this.location.href = "index.html";
-//     }
-//   }
-// });
+window.addEventListener("resize", function () {
+  if (window.matchMedia("(orientation: portrait)").matches) {
+    // экран стал вертикальным
+    if (this.document.body.offsetWidth < 480) {
+      this.location.href = "index.html";
+    }
+  }
+});
