@@ -32,13 +32,13 @@ dropdivb1.addEventListener('click', () => {
     dropdiv.style.padding = "0";
   }, 240);
 });
-window.addEventListener('load', function () {
-  if (window.matchMedia("(orientation: landscape)").matches) {
-    // экран стал горизонтальным
-    this.location.href = "index.html"
-    console.log("Экран стал горизонтальным");
-  }
-});
+// window.addEventListener('load', function () {
+//   if (window.matchMedia("(orientation: landscape)").matches) {
+//     // экран стал горизонтальным
+//     this.location.href = "index.html"
+//     console.log("Экран стал горизонтальным");
+//   }
+// });
 window.addEventListener("resize", function () {
 
   if (window.matchMedia("(orientation: portrait)").matches) {
