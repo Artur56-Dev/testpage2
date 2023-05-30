@@ -21,6 +21,9 @@ window.addEventListener('load', function () {
     
     if (window.matchMedia("(orientation: portrait)").matches) {
       // экран стал вертикальным
+      if(this.document.body.offsetWidth < 480){
+        this.location.href = "index2.html"
+      }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
