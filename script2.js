@@ -35,7 +35,7 @@ dropdivb1.addEventListener('click', () => {
 window.addEventListener('load', function () {
   if (window.matchMedia("(orientation: landscape)").matches) {
     // экран стал горизонтальным
-    this.location.href = "index.php"
+    this.location.href = "index.html"
     console.log("Экран стал горизонтальным");
   }
 });
