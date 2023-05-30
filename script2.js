@@ -41,7 +41,8 @@ dropdivb1.addEventListener('click', () => {
 // // });
 window.addEventListener("resize", function () {
   if (window.matchMedia("(orientation: portrait)").matches) {
-    // экран стал вертикальным
+    // экран стал горизонтальным
+    console.log('стал горизонтальным');
     if (this.document.body.offsetWidth < 480) {
       this.location.href = "index.html";
     }
