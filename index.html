@@ -17,31 +17,16 @@
 </head>
 
 <body>
+    <script>
+        const body = document.body.offsetWidth;
+        if(body < 480){
+            location.href = "index2.php";
+        }
+        console.log('Ширина body:' + body);
+</script>
     <div class="maindiv">
         <div class="hellodiv">
-            <?php
-            $rand = rand(1, 4);
-            switch ($rand) {
-                case 1:
-                    $img = '<img class="helloimg" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg">';
-                    // $img = '<img class="helloimg" src="https://www.einsurance.com/wp-content/uploads/Condominium-Insurance.jpg">';
-                    echo $img;
-                    break;
-                case 2:
-                    $img = '<img class="helloimg" src="https://miriadagroup.ru/wp-content/uploads/2017/08/03-e1505386266928.jpg">';
-                    echo $img;
-                    break;
-                case 3:
-                    $img = '<img class="helloimg" src="https://kmory.ru/img/Резиденция.jpg">';
-                    echo $img;
-                    break;
-                case 4:
-                    $img = '<img class="helloimg" src="https://img5.goodfon.ru/original/2736x1826/2/f4/krasnodar-gorod-rossiia-reka-kuban-nebo-leto-doma-zdaniia-ne.jpg">';
-                    // $img = '<img class="helloimg" src="https://design101blog.files.wordpress.com/2013/08/3d-modern-building-design-25.jpg">';
-                    echo $img;
-                    break;
-            }
-            ?>
+            <img class="helloimg" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg">
             <!-- <img class="helloimg" src="https://alterainvest.ru/upload/iblock/fe7/fe7c4fd266ad1ee0a642ca36230a0535.jpg"> -->
             <!-- <img class="helloimg" src="https://www.einsurance.com/wp-content/uploads/Condominium-Insurance.jpg"> -->
             <!-- <img class="helloimg" src="https://news1.ru/wp-content/uploads/2017/06/2-e1497612810369.jpg"> -->
