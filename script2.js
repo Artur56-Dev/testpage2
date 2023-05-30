@@ -33,22 +33,9 @@ dropdivb1.addEventListener('click', () => {
   }, 240);
 });
 window.addEventListener('load', function () {
-  window.addEventListener("resize", function() {
-    if (window.matchMedia("(orientation: portrait)").matches) {
-      // экран стал вертикальным
-      const headingp = this.document.querySelector('.heading headingp');
-      if(this.document.body.offsetWidth < 480){
-        this.location.href = "index.html";
-        headingp.textContent = ""
-      }
-      console.log('Экран стал вертикальным');
-    } else if (window.matchMedia("(orientation: landscape)").matches) {
-      // экран стал горизонтальным
-      if(this.document.body.offsetWidth < 480){
-        this.location.href = "index.html";
-        headingp.textContent = "sfsadfd"
-      }
-      console.log("Экран стал горизонтальным");
+  window.addEventListener('resize', function () {
+    if (window.innerHeight < window.innerWidth) {
+      this.location.href = "index.html";
     }
   });
 });
