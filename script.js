@@ -1,4 +1,3 @@
-
 let bodyWidth = document.body.clientWidth;
 console.log(bodyWidth);
 window.addEventListener('load', function () {
@@ -21,10 +20,6 @@ window.addEventListener('load', function () {
     
     
     if (window.matchMedia("(orientation: portrait)").matches) {
-      // экран стал вертикальным
-      // if(this.document.body.offsetWidth < 480){
-      //   this.location.href = "index2.php"
-      // }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
@@ -52,7 +47,6 @@ window.addEventListener('load', function () {
   });
 });
 console.log('Видимоя высота:' + window.innerHeight);
-
 const div = document.querySelector('.headerdiv');
 const placeholder = document.createElement('div');
 placeholder.style.height = 5 + 'vw';
@@ -91,7 +85,6 @@ divmenuspan.addEventListener('click', () => {
   setTimeout(function () {
     dropdiv.style.padding = "3vw";
   }, 60);
-  // dropdiv.style.padding = "3vw";
 });
 const dropdivb1 = document.querySelector('.dropdiv2 .a1 .b1');
 dropdivb1.addEventListener('click', () => {
