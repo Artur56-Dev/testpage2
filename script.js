@@ -67,6 +67,21 @@ window.addEventListener('scroll', () => {
     placeholder.style.display = 'none'; // hide the placeholder element when the div element is no longer fixed
   }
 });
+const div1 = document.querySelector('.headerdiv2');
+const placeholder1 = document.createElement('div');
+placeholder1.style.height = div1.offsetHeight + 'px';
+placeholder1.style.display = 'none';
+div1.parentNode.insertBefore(placeholder1, div1);
+const threshold1 = div.offsetTop;
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > threshold1) {
+    div1.classList.add('fixed-top');
+    placeholder1.style.display = 'block'; 
+  } else {
+    div1.classList.remove('fixed-top');
+    placeholder1.style.display = 'none';
+  }
+});
 const divmenuspan = document.querySelector('.divmenuspan2');
 const dropdiv = document.querySelector('.dropdiv2');
 divmenuspan.addEventListener('click', () => {
