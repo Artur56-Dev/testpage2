@@ -54,7 +54,7 @@ console.log('Видимоя высота:' + window.innerHeight);
 
 const div = document.querySelector('.headerdiv');
 const placeholder = document.createElement('div');
-placeholder.style.height = div.offsetHeight + 'px';
+placeholder.style.height = 5 + 'vw';
 placeholder.style.display = 'none';
 div.parentNode.insertBefore(placeholder, div);
 const threshold = div.offsetTop;
@@ -69,7 +69,7 @@ window.addEventListener('scroll', () => {
 });
 const div1 = document.querySelector('.headerdiv2');
 const placeholder1 = document.createElement('div');
-placeholder1.style.height = div1.offsetHeight + 'px';
+placeholder1.style.height = 15 + 'vw';
 placeholder1.style.display = 'none';
 div1.parentNode.insertBefore(placeholder1, div1);
 const threshold1 = div.offsetTop;
