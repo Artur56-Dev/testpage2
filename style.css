@@ -615,7 +615,6 @@ ul {
   background-color: #ffffff;
 }
 
-/*responsive*/
 @media (max-width: 51vw) {
   .footer-col {
     width: 50%;
@@ -881,12 +880,9 @@ ul {
     align-items: center;
     border-width: 0;
     background: linear-gradient(to bottom, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0));
-    /* box-shadow: 0 0 2vw 2vw rgb(0, 0, 0, 0.2    ); */
-    /* background: linear-gradient(black , transparent); */
   }
   .headerlogodiv2 {
     display: flex;
-    /* justify-content: center; */
     height: 100%;
     width: 100%;
     width: auto;
@@ -902,8 +898,6 @@ ul {
     position: fixed;
     background: none;
     background-color: white;
-    /* background-color: transparent;
-        backdrop-filter: blur(30px); */
     box-shadow: 0 0 1vw 0vw rgb(0, 0, 0, 0.1);
     z-index: 5;
     top: 0;
@@ -995,11 +989,9 @@ ul {
   }
   .maincontent .conteiner1 {
     background-image: url(image/gradientphone.jpg);
-    /* opacity: 0.5; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /* height: 80vh; */
     height: 50vh;
     width: 100%;
     margin-bottom: 5vw;
@@ -1103,7 +1095,6 @@ ul {
     left: 0px;
     overflow: hidden;
     white-space: nowrap;
-    /* animation: bannermove 150s linear infinite; */
   }
   .container2 .banner1 {
     animation: bannermove 140s linear infinite;
@@ -1161,7 +1152,6 @@ ul {
   .container32 .a2 {
     display: flex;
     flex-direction: column;
-    /* height: 35vw; */
     aspect-ratio: 1/1;
     width: 100%;
   }
@@ -1263,8 +1253,6 @@ ul {
   .container32 .a2 .b1:hover .div img,
   .container32 .a1 .b2:hover .div img,
   .container32 .a2 .b2:hover .div img {
-    /* transform: translateY(-100%); */
-    /* padding-top: 50%; */
     z-index: 1;
     transform: scale(0.8);
     opacity: 0;
@@ -1352,7 +1340,6 @@ ul {
     background-color: #ffffff;
   }
 
-  /*responsive*/
   @media (max-width: 51vw) {
     .footer-col {
       width: 50%;
@@ -1386,10 +1373,6 @@ ul {
     width: 100%;
     height: 100%;
   }
-  .login-logout .a1 {
-    /* background-image: url(https://pro-dachnikov.com/uploads/posts/2021-10/1634632067_4-p-krasivie-letnie-verandi-foto-4.jpg);
-    background-size: cover; */
-  }
   .login-logout .a2 {
     display: flex;
     flex-direction: column;
@@ -1404,9 +1387,6 @@ ul {
   }
   .login-logout .a2 .b1 span {
     font-size: 8vw;
-  }
-  .login-logout .b1 span:hover {
-    /* background-color: rgb(227, 227, 227); */
   }
   .login-logout .b2 {
     flex-grow: 1;
@@ -1436,23 +1416,12 @@ ul {
     width: 100%;
     outline: none;
   }
-  .login-logout .a2 form input:focus {
-    /* border-color: var(--color4);
-    border-width: 2px; */
-  }
   .login-logout .a2 form .but1 {
     border-radius: 1vw;
     border-width: 1px;
     font-size: 4vw;
     height: 7vw;
     margin-top: calc(var(--index) * 0.8);
-  }
-  .login-logout .a2 form .separator {
-    /* position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: calc(var(--index) * 2) 0 calc(var(--index) * 1.5) 0; */
   }
   .login-logout form .separator .sep {
     width: 90%;
