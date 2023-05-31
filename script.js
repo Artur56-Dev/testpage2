@@ -1,3 +1,4 @@
+
 let bodyWidth = document.body.clientWidth;
 console.log(bodyWidth);
 window.addEventListener('load', function () {
@@ -69,7 +70,7 @@ window.addEventListener('scroll', () => {
 });
 const div1 = document.querySelector('.headerdiv2');
 const placeholder1 = document.createElement('div');
-placeholder1.style.height = 15 + 'vw';
+placeholder1.style.height = 7 + 'vh';
 placeholder1.style.display = 'none';
 div1.parentNode.insertBefore(placeholder1, div1);
 const threshold1 = div.offsetTop;
@@ -100,4 +101,27 @@ dropdivb1.addEventListener('click', () => {
   setTimeout(function () {
     dropdiv.style.padding = "0";
   }, 240);
+});
+const blurback = document.querySelector('.blurback');
+const elements = document.querySelectorAll('#singin');
+elements.forEach(element => {
+  element.addEventListener('click', function() {
+    blurback.style.display = "flex";
+  });
+});
+const closeregforms = document.querySelectorAll('#closeregform');
+closeregforms.forEach(closeregform => {
+  closeregform.addEventListener('click', function() {
+    blurback.style.display = "none";
+  });
+});
+const loginfotm = document.querySelector('.login-logout .a2');
+const registrfotm = document.querySelector('.login-logout .a3');
+$('#backsingin').click(function(){
+  loginfotm.style.display = "flex";
+  registrfotm.style.display = "none";
+});
+$('#regform').click(function(){
+  loginfotm.style.display = "none";
+  registrfotm.style.display = "flex";
 });
