@@ -1,4 +1,3 @@
-
 let bodyWidth = document.body.clientWidth;
 console.log(bodyWidth);
 window.addEventListener('load', function () {
@@ -19,11 +18,12 @@ window.addEventListener('load', function () {
   }
   window.addEventListener("resize", function() {
     
+    
     if (window.matchMedia("(orientation: portrait)").matches) {
       // экран стал вертикальным
-      if(this.document.body.offsetWidth < 480){
-        this.location.href = "index2.html"
-      }
+      // if(this.document.body.offsetWidth < 480){
+      //   this.location.href = "index2.php"
+      // }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
@@ -35,6 +35,9 @@ window.addEventListener('load', function () {
       console.log('Экран стал вертикальным');
     } else if (window.matchMedia("(orientation: landscape)").matches) {
       // экран стал горизонтальным
+      if(this.document.body.offsetWidth < 480){
+        this.location.href = "index2.php";
+      }
       if(this.window.innerWidth > this.window.innerHeight){
         conteiner1.style.height = "80vh";
         console.log("Ширина "+this.window.innerWidth + " больше " + "Высоты " + this.window.innerHeight)
@@ -48,10 +51,6 @@ window.addEventListener('load', function () {
   });
 });
 console.log('Видимоя высота:' + window.innerHeight);
-// if (hellodiv.style.height > 100) {
-//   hellodiv.style.height = "100vh";
-//   console.log('div больше и должен обрезатся');
-// }
 
 const div = document.querySelector('.headerdiv');
 const placeholder = document.createElement('div');
@@ -68,22 +67,22 @@ window.addEventListener('scroll', () => {
     placeholder.style.display = 'none'; // hide the placeholder element when the div element is no longer fixed
   }
 });
-// const divmenuspan = document.querySelector('.divmenuspan');
-// const dropdiv = document.querySelector('.dropdiv');
-// divmenuspan.addEventListener('click', () =>{
-//     console.log('Нажал');
-//     dropdiv.style.height = "68vw";
-//     setTimeout(function() {
-//         dropdiv.style.padding = "3vw";
-//     }, 60);
-//     // dropdiv.style.padding = "3vw";
-// });
-// const dropdivb1 = document.querySelector('.dropdiv .a1 .b1');
-// dropdivb1.addEventListener('click', () =>{
-//     console.log('Нажал');
-//     dropdiv.style.height = "0";
-//     // dropdiv.style.padding = "0";
-//     setTimeout(function() {
-//         dropdiv.style.padding = "0";
-//     }, 240);
-// });
+const divmenuspan = document.querySelector('.divmenuspan2');
+const dropdiv = document.querySelector('.dropdiv2');
+divmenuspan.addEventListener('click', () => {
+  console.log('Нажал');
+  dropdiv.style.height = "68vw";
+  setTimeout(function () {
+    dropdiv.style.padding = "3vw";
+  }, 60);
+  // dropdiv.style.padding = "3vw";
+});
+const dropdivb1 = document.querySelector('.dropdiv2 .a1 .b1');
+dropdivb1.addEventListener('click', () => {
+  console.log('Нажал');
+  dropdiv.style.height = "0";
+  // dropdiv.style.padding = "0";
+  setTimeout(function () {
+    dropdiv.style.padding = "0";
+  }, 240);
+});
