@@ -80,7 +80,23 @@
     </div>
     <div class="maindiv">
         <div class="hellodiv">
-            '<img class="helloimg" src="https://kmory.ru/img/Резиденция.jpg">
+            <script>
+                const rand = Math.floor(Math.random() * 4) + 1;
+                switch (rand) {
+                    case 1:
+                        document.write('<img class="helloimg" src="https://cdn-p.cian.site/images/55/260/631/san-siti-sochi-jk-1360625549-10.jpg">');
+                        break;
+                    case 2:
+                        document.write('<img class="helloimg" src="https://miriadagroup.ru/wp-content/uploads/2017/08/03-e1505386266928.jpg">');
+                        break;
+                    case 3:
+                        document.write('<img class="helloimg" src="https://kmory.ru/img/Резиденция.jpg">');
+                        break;
+                    case 4:
+                        document.write('<img class="helloimg offset" src="https://img5.goodfon.ru/original/2736x1826/2/f4/krasnodar-gorod-rossiia-reka-kuban-nebo-leto-doma-zdaniia-ne.jpg">');
+                        break;
+                }
+            </script>
             <div class="blackoutdiv"></div>
             <div class="hellocontent">
                 <div class="headerdiv">
